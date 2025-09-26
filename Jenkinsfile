@@ -14,10 +14,15 @@ pipeline {
             }
         }
 
-        stage('Build & Test') {
+         stage('Build') {
             steps {
-                // Lancer les tests Maven
-                bat "mvn clean test"
+                bat "mvn clean compile"
+            }
+        }
+
+        stage('Test') {
+            steps {
+                bat "mvn test"
             }
         }
     }
