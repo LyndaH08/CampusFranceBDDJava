@@ -32,7 +32,7 @@ pipeline {
             cucumber 'target/cucumber-reports/Cucumber.json'
 
             // Archiver le HTML pour pouvoir le télécharger
-            archiveArtifacts artifacts: 'target/cucumber-html-report/**', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'target/cucumber-reports/Cucumber.html', allowEmptyArchive: true
         }
     }
 }
