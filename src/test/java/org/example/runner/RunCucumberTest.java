@@ -15,5 +15,5 @@ import static io.cucumber.junit.platform.engine.Constants.GLUE_PROPERTY_NAME;
 @IncludeEngines("cucumber")
 @SelectClasspathResource("features") // le dossier des .feature
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "org.example.steps") // package des s
-public class RunCucumber {
+public class RunCucumberTest {
 }
